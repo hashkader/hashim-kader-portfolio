@@ -1,23 +1,13 @@
 <script>
-  let vhs = false
-  function handleToggle (){
-    vhs = !vhs
-  }
-
-  $:console.log(vhs)
 </script>
 
-<div class="container {vhs?"vhs":""}">
-  <nav>
-    <a href="#">CONTACT</a>
-    <a href="#">ABOUT</a>
-    <a href="/projects" class="buy">Projects</a>
-  </nav>
+<div class="container">
+  
   <div class="main-container">
     <div class="text-sphere-container">
       <div class="text-container">
         <h1>Hashim Kader</h1>
-        <h2>SOFTWARE, AI AND MACHINE LEARNING ENGINEER</h2>
+        <h2>SOFTWARE & AI/ML ENGINEER</h2>
         <h3>BSc AI/ML Eng</h3>
         <!-- <p>Couldnt really think of anything to put here but the space kinda looks empty without it no?</p> -->
         <a href="/projects" class="buy-cta">View Projects</a>
@@ -27,7 +17,6 @@
       </a>
     </div>
     <div class="learn-arrow">
-      <!-- <button on:click={handleToggle}>click me</button> -->
     </div>
   </div>
 </div>
@@ -56,29 +45,32 @@ h1 {
   font-family: "Mulish", sans-serif;
   font-weight: 1000;
   font-size: 64px;
+  line-height: 72px;
   color: var(--light-color);
   text-align: left;
 }
 
 h2 {
   margin: 0;
-  font-family: "Playfair Display", serif;
-  font-size: 16px;
-  color: var(--mid-light);
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--light-color);
   text-align: left;
 }
 
 h3 {
   margin: 0;
-  font-family: "DM Serif Display", serif;
-  font-size: 24px;
-  color: var(--mid-light);
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--light-color);
   text-align: left;
-  margin-bottom: 8px;
+  padding-bottom: 16px;
 }
 
 p {
-  font-family: "Mulish", sans-serif;
+  font-family: "DM Serif Display", sans-serif;
   font-weight: 700;
   width: 390px;
   color: var(--mid-light);
@@ -141,21 +133,6 @@ a:hover:not(.buy, .buy-cta, .learn) {
   z-index: 3;
 }
 
-.vhs:after {
-  content: "";
-  display: flex;
-  position: absolute;
-  background-image: var(--gif-texture);
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  mix-blend-mode: screen;
-  pointer-events: none;
-  opacity: 64%; 
-  z-index: 3;
-}
-
 .main-container {
   padding: 0;
   margin: auto;
@@ -177,7 +154,9 @@ a:hover:not(.buy, .buy-cta, .learn) {
   width: 125%;
   gap: 128px;
   align-items: center;  
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 1))
 }
+
 
 .sphere {
   display: grid;
