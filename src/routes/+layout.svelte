@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-
+  import Nav from '../components/nav/Nav.svelte';
   let canvas: HTMLCanvasElement | null = null;
   let ctx: CanvasRenderingContext2D | null = null;
   let particles: Particle[] = [];
@@ -16,7 +16,7 @@
     proximity: 100,
     particleRadius: 2,
     lineWidth: 1,
-    density: 20000,
+    density: 23000,
   };
 
   class Particle {
@@ -120,12 +120,8 @@
   });
 </script>
 
-<nav>
-  <a href="#">CONTACT</a>
-  <a href="#">ABOUT</a>
-  <a href="/projects" class="buy">Projects</a>
-</nav>
 <div id="particles">
+  <Nav/>
   <canvas id="particle-canvas"></canvas>
   <div id="intro">
     <slot /> 
@@ -135,7 +131,7 @@
 <style>
   :global(body) {
     background-color: #15251fe4;
-    overflow: hidden;
+    overflow: hidden;;
   }
 
   #particles {
@@ -161,51 +157,4 @@
     transform: translateY(-50%);
   }
 
-  nav {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  box-sizing: border-box;
-  margin: 30px 128px;
-  gap: 48px;
-  font-size: 16px;
-}
-
-a {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  font-family: "Mulish", sans-serif;
-  color: var(--mid-light);
-  font-weight: 400;
-  text-decoration: none;
-}
-
-a:not(.buy, .buy-cta, .learn) {
-  width: 64px;
-}
-
-a:hover:not(.buy, .buy-cta, .learn) {
-  transition: all 0.2s ease-in-out;
-  font-weight: 900;
-  text-shadow: 0 0 8px var(--light-color);
-}
-
-.buy {
-  display: grid;
-  place-items: center;
-  font-weight: 900;
-  border: 1px solid var(--mid-light);
-  height: 40px;
-  width: 128px;
-  transition: all 0.2s;
-}
-
-.buy:hover {
-  scale: 1.1;
-  background: var(--light-color);
-  color: var(--dark-color);
-  border: 1px solid var(--light-color);
-}
 </style>
