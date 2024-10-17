@@ -1,20 +1,12 @@
-<script>
-  import PageWrapper from "../components/core/PageWrapper.svelte";
-  import Header from "../components/core/Header.svelte";
-</script>
-
-<PageWrapper>
-  <Header/>
-  <!-- <div class="text-sphere-container">
-      <div class="text-container">
-        <h1>Hashim Kader</h1>
-        <h2>SOFTWARE & AI/ML ENGINEER</h2>
-        <h3>BSc AI/ML Eng</h3>
-        <a href="/projects" class="buy-cta">View Projects</a>
-      </div>
-      <div class="sphere"></div>
-  </div> -->
-</PageWrapper>
+<div class="text-sphere-container">
+  <div class="text-container">
+    <h1>Hashim Kader</h1>
+    <h2>SOFTWARE & AI/ML ENGINEER</h2>
+    <h3>BSc AI/ML Eng</h3>
+    <a href="/projects" class="buy-cta">View Projects</a>
+  </div>
+  <div class="sphere"></div>
+</div>
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
