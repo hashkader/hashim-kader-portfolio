@@ -1,6 +1,19 @@
 <div class="text-sphere-container">
   <div class="text-container">
-    <h1>Hashim Kader</h1>
+    <div class="name">
+      <span class="letter bg">H</span>
+      <span class="letter bg">a</span>
+      <span class="letter bg">s</span>
+      <span class="letter bg">h</span>
+      <span class="letter bg">i</span>
+      <span class="letter bg">m</span>
+      <span class="letter bg">&nbsp</span>
+      <span class="letter bg">K</span>
+      <span class="letter bg">a</span>
+      <span class="letter bg">d</span>
+      <span class="letter bg">e</span>
+      <span class="letter bg">r</span>
+    </div>
     <h2>SOFTWARE & AI/ML ENGINEER</h2>
     <h3>BSc AI/ML Eng</h3>
     <a href="/projects" class="buy-cta">View Projects</a>
@@ -45,6 +58,44 @@
     line-height: 72px;
     color: var(--light-color);
     text-align: left;
+  }
+
+  .bg{
+    font-weight: 1000;
+    font-size: 64px;
+    line-height: 72px;
+  }
+  .letter {
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+    color: var(--light-color);
+    text-align: left;
+    transition: transform 0.09s ease;
+  }
+
+  .letter:hover {
+      transform: scale(1.1) rotate(15deg);
+      animation: sway-back 0.5s ease forwards; /* Use forwards to maintain the end state */
+  }
+
+  @keyframes sway-back {
+      0% {
+          transform: scale(1.1) rotate(0deg);
+      }
+      50% {
+          transform: scale(1.0) rotate(15deg); /* Rotate back to 0 */
+      }
+      70% {
+          transform: scale(1.0) rotate(-5deg); /* Overshoot to -5deg */
+      }
+      100% {
+          transform: scale(1.0) rotate(0deg); /* Back to 0deg */
+      }
+  }
+
+
+  .name{
+    display: flex;
   }
 
   h2 {
@@ -93,6 +144,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  
 
   .text-sphere-container {
   display: flex;
