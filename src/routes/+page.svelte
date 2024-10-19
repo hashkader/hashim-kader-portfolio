@@ -5,15 +5,6 @@
 
 <PageWrapper>
   <Header/>
-  <!-- <div class="text-sphere-container">
-      <div class="text-container">
-        <h1>Hashim Kader</h1>
-        <h2>SOFTWARE & AI/ML ENGINEER</h2>
-        <h3>BSc AI/ML Eng</h3>
-        <a href="/projects" class="buy-cta">View Projects</a>
-      </div>
-      <div class="sphere"></div>
-  </div> -->
 </PageWrapper>
 
 <style>
@@ -101,12 +92,6 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
-  .text-sphere-container {
-  display: flex;
-  gap: 128px;
-  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 1));
-}
 
   .sphere {
     display: grid;

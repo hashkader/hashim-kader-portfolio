@@ -1,21 +1,63 @@
 <div class="text-sphere-container">
   <div class="text-container">
-    <div class="name">
-      <span class="letter bg">H</span>
-      <span class="letter bg">a</span>
-      <span class="letter bg">s</span>
-      <span class="letter bg">h</span>
-      <span class="letter bg">i</span>
-      <span class="letter bg">m</span>
-      <span class="letter bg">&nbsp</span>
-      <span class="letter bg">K</span>
-      <span class="letter bg">a</span>
-      <span class="letter bg">d</span>
-      <span class="letter bg">e</span>
-      <span class="letter bg">r</span>
+    <div class="text">
+      <div class="name">
+        <span class="letter bg">H</span>
+        <span class="letter bg">A</span>
+        <span class="letter bg">S</span>
+        <span class="letter bg">H</span>
+        <span class="letter bg">I</span>
+        <span class="letter bg">M</span>
+        <span class="letter bg">&nbsp</span>
+        <span class="letter bg">K</span>
+        <span class="letter bg">A</span>
+        <span class="letter bg">D</span>
+        <span class="letter bg">E</span>
+        <span class="letter bg">R</span>
+      </div>
+      <div class="name" >
+        <span class="letter md">S</span>
+        <span class="letter md">O</span>
+        <span class="letter md">F</span>
+        <span class="letter md">T</span>
+        <span class="letter md">W</span>
+        <span class="letter md">A</span>
+        <span class="letter md">R</span>
+        <span class="letter md">E</span>
+        <span class="letter md">&nbsp</span>
+        <span class="letter md">&</span>
+        <span class="letter md">&nbsp</span>
+        <span class="letter md">A</span>
+        <span class="letter md">I</span>
+        <span class="letter md">/</span>
+        <span class="letter md">M</span>
+        <span class="letter md">L</span>
+        <span class="letter md">&nbsp</span>
+        <span class="letter md">E</span>
+        <span class="letter md">N</span>
+        <span class="letter md">G</span>
+        <span class="letter md">I</span>
+        <span class="letter md">N</span>
+        <span class="letter md">E</span>
+        <span class="letter md">E</span>
+        <span class="letter md">R</span>
+      </div>
+      <div class="name">
+        <span class="letter sm">B</span>
+        <span class="letter sm">S</span>
+        <span class="letter sm">c</span>
+        <span class="letter sm">&nbsp</span>
+        <span class="letter sm">A</span>
+        <span class="letter sm">I</span>
+        <span class="letter sm">/</span>
+        <span class="letter sm">M</span>
+        <span class="letter sm">L</span>
+        <span class="letter sm">&nbsp</span>
+        <span class="letter sm">E</span>
+        <span class="letter sm">n</span>
+        <span class="letter sm">g</span>
+      </div>
     </div>
-    <h2>SOFTWARE & AI/ML ENGINEER</h2>
-    <h3>BSc AI/ML Eng</h3>
     <a href="/projects" class="buy-cta">View Projects</a>
   </div>
   <div class="sphere"></div>
@@ -63,7 +105,15 @@
   .bg{
     font-weight: 1000;
     font-size: 64px;
-    line-height: 72px;
+  }
+  .md{
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .sm{
+    font-weight: 700;
+    font-size: 16px;
   }
   .letter {
     margin: 0;
@@ -75,21 +125,27 @@
 
   .letter:hover {
       transform: scale(1.1) rotate(15deg);
-      animation: sway-back 0.5s ease forwards; /* Use forwards to maintain the end state */
+      animation: sway-back 0.5s ease forwards; 
+  }
+
+  .text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 
   @keyframes sway-back {
       0% {
-          transform: scale(1.1) rotate(0deg);
+          transform: scale(1.9) rotate(0deg) ;
       }
       50% {
-          transform: scale(1.0) rotate(15deg); /* Rotate back to 0 */
+          transform: scale(1.0) rotate(15deg);
       }
       70% {
-          transform: scale(1.0) rotate(-5deg); /* Overshoot to -5deg */
+          transform: scale(1.0) rotate(-5deg); 
       }
       100% {
-          transform: scale(1.0) rotate(0deg); /* Back to 0deg */
+          transform: scale(1.0) rotate(0deg); 
       }
   }
 
@@ -101,8 +157,6 @@
   h2 {
     margin: 0;
     font-family: "Mulish", sans-serif;
-    font-weight: 700;
-    font-size: 24px;
     color: var(--light-color);
     text-align: left;
     padding-bottom: 4px;
@@ -142,10 +196,10 @@
   .text-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    /* align-items: flex-start; */
   }
   
-
   .text-sphere-container {
   display: flex;
   gap: 128px;
