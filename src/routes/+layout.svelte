@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import Nav from '../components/nav/Nav.svelte';
+  import Nav from '../components/core/Nav.svelte';
   let canvas: HTMLCanvasElement | null = null;
   let ctx: CanvasRenderingContext2D | null = null;
   let particles: Particle[] = [];

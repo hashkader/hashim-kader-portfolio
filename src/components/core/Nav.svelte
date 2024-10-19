@@ -1,6 +1,6 @@
 <nav>
   <a href="#">CONTACT</a>
-  <a href="#">ABOUT</a>
+  <a href="/about">ABOUT</a>
   <a href="/projects" class="buy">Projects</a>
 </nav>
 

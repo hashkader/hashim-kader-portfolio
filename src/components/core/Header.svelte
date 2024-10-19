@@ -58,7 +58,7 @@
         <span class="letter sm">g</span>
       </div>
     </div>
-    <a href="/projects" class="buy-cta">View Projects</a>
+    <a href="/projects" class="button-cta">View Projects</a>
   </div>
   <div class="sphere"></div>
 </div>
@@ -183,11 +183,11 @@
     text-decoration: none;
   }
 
-  a:not(.buy, .buy-cta, .learn) {
+  a:not(.button, .button-cta, .learn) {
     width: 64px;
   }
 
-  a:hover:not(.buy, .buy-cta, .learn) {
+  a:hover:not(.button, .button-cta, .learn) {
     transition: all 0.2s ease-in-out;
     font-weight: 900;
     text-shadow: 0 0 8px var(--light-color);
@@ -197,7 +197,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: flex-start; */
   }
   
   .text-sphere-container {
@@ -223,7 +222,7 @@
     transition: all 0.2s;
   }
 
-  .buy-cta {
+  .button-cta {
     display: grid;
     place-items: center;
     color: var(--dark-color);
@@ -239,7 +238,7 @@
     transition: all 0.4s;
   }
 
-  .buy-cta:hover {
+  .button-cta:hover {
     scale: 1.1;
     color: var(--light-color);
     background-image: var(--linear-rainbow);
