@@ -90,8 +90,11 @@
       #6f5d79,
       #4e779a
     );
-    --noise-texture: url(https://i.gyazo.com/a26366e538851a5c569ff648e99b7fd4.png);
-    --gif-texture: url(https://64.media.tumblr.com/da60c13b478dda09ab90c27e880983b8/tumblr_nd4pwdPKdc1tun3l0o1_1280.gifv);
+    --highlight-color: null;
+  }
+
+  ::selection {
+    background: var(--highlight-color);
   }
 
   h1 {
@@ -291,5 +294,21 @@
 
   onMount(() => {
     gradientElement = document.querySelector('.bg-gradient');
+  });
+
+  let colors = ["	#9c7248", "#926a2d", "#876127", "#7c501a", "#6f4f1d" ];
+
+  const changeHighlightColor = () => {
+    const color = colors.shift();
+    document.documentElement.style.setProperty("--highlight-color", color);
+    colors.push(color);
+  };
+
+  onMount(() => {
+    window.addEventListener("mousedown", changeHighlightColor);
+    
+    return () => {
+      window.removeEventListener("mousedown", changeHighlightColor);
+    };
   });
 </script>
