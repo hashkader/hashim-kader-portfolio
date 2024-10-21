@@ -145,7 +145,6 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: url('http://arnaudel.perso.neuf.fr/Payekhali/Fonds/1280/AS11-40-5873.jpg') no-repeat center center;
     background-size: cover;
   }
 

@@ -2,66 +2,68 @@
   <div class="text-container">
     <div class="text">
       <div class="name">
-        <span class="letter bg">H</span>
-        <span class="letter bg">A</span>
-        <span class="letter bg">S</span>
-        <span class="letter bg">H</span>
-        <span class="letter bg">I</span>
-        <span class="letter bg">M</span>
+        <span class="letter bg" on:mouseover={applyGradient}>H</span>
+        <span class="letter bg" on:mouseover={applyGradient}>A</span>
+        <span class="letter bg" on:mouseover={applyGradient}>S</span>
+        <span class="letter bg" on:mouseover={applyGradient}>H</span>
+        <span class="letter bg" on:mouseover={applyGradient}>I</span>
+        <span class="letter bg" on:mouseover={applyGradient}>M</span>
         <span class="letter bg">&nbsp</span>
-        <span class="letter bg">K</span>
-        <span class="letter bg">A</span>
-        <span class="letter bg">D</span>
-        <span class="letter bg">E</span>
-        <span class="letter bg">R</span>
+        <span class="letter bg" on:mouseover={applyGradient}>K</span>
+        <span class="letter bg" on:mouseover={applyGradient}>A</span>
+        <span class="letter bg" on:mouseover={applyGradient}>D</span>
+        <span class="letter bg" on:mouseover={applyGradient}>E</span>
+        <span class="letter bg" on:mouseover={applyGradient}>R</span>
       </div>
       <div class="name" >
-        <span class="letter md">S</span>
-        <span class="letter md">O</span>
-        <span class="letter md">F</span>
-        <span class="letter md">T</span>
-        <span class="letter md">W</span>
-        <span class="letter md">A</span>
-        <span class="letter md">R</span>
-        <span class="letter md">E</span>
-        <span class="letter md">&nbsp</span>
-        <span class="letter md">&</span>
-        <span class="letter md">&nbsp</span>
-        <span class="letter md">A</span>
-        <span class="letter md">I</span>
-        <span class="letter md">/</span>
-        <span class="letter md">M</span>
-        <span class="letter md">L</span>
-        <span class="letter md">&nbsp</span>
-        <span class="letter md">E</span>
-        <span class="letter md">N</span>
-        <span class="letter md">G</span>
-        <span class="letter md">I</span>
-        <span class="letter md">N</span>
-        <span class="letter md">E</span>
-        <span class="letter md">E</span>
-        <span class="letter md">R</span>
+        <span class="letter md" on:mouseover={applyGradient}>S</span>
+        <span class="letter md" on:mouseover={applyGradient}>O</span>
+        <span class="letter md" on:mouseover={applyGradient}>F</span>
+        <span class="letter md" on:mouseover={applyGradient}>T</span>
+        <span class="letter md" on:mouseover={applyGradient}>W</span>
+        <span class="letter md" on:mouseover={applyGradient}>A</span>
+        <span class="letter md" on:mouseover={applyGradient}>R</span>
+        <span class="letter md" on:mouseover={applyGradient}>E</span>
+        <span class="letter md" on:mouseover={applyGradient}>&nbsp</span>
+        <span class="letter md" on:mouseover={applyGradient}>&</span>
+        <span class="letter md" on:mouseover={applyGradient}>&nbsp</span>
+        <span class="letter md" on:mouseover={applyGradient}>A</span>
+        <span class="letter md" on:mouseover={applyGradient}>I</span>
+        <span class="letter md" on:mouseover={applyGradient}>/</span>
+        <span class="letter md" on:mouseover={applyGradient}>M</span>
+        <span class="letter md" on:mouseover={applyGradient}>L</span>
+        <span class="letter md" on:mouseover={applyGradient}>&nbsp</span>
+        <span class="letter md" on:mouseover={applyGradient}>E</span>
+        <span class="letter md" on:mouseover={applyGradient}>N</span>
+        <span class="letter md" on:mouseover={applyGradient}>G</span>
+        <span class="letter md" on:mouseover={applyGradient}>I</span>
+        <span class="letter md" on:mouseover={applyGradient}>N</span>
+        <span class="letter md" on:mouseover={applyGradient}>E</span>
+        <span class="letter md" on:mouseover={applyGradient}>E</span>
+        <span class="letter md" on:mouseover={applyGradient}>R</span>
       </div>
       <div class="name">
-        <span class="letter sm">B</span>
-        <span class="letter sm">S</span>
-        <span class="letter sm">c</span>
-        <span class="letter sm">&nbsp</span>
-        <span class="letter sm">A</span>
-        <span class="letter sm">I</span>
-        <span class="letter sm">/</span>
-        <span class="letter sm">M</span>
-        <span class="letter sm">L</span>
-        <span class="letter sm">&nbsp</span>
-        <span class="letter sm">E</span>
-        <span class="letter sm">n</span>
-        <span class="letter sm">g</span>
+        <span class="letter sm" on:mouseover={applyGradient}>B</span>
+        <span class="letter sm" on:mouseover={applyGradient}>S</span>
+        <span class="letter sm" on:mouseover={applyGradient}>c</span>
+        <span class="letter sm" on:mouseover={applyGradient}>&nbsp</span>
+        <span class="letter sm" on:mouseover={applyGradient}>A</span>
+        <span class="letter sm" on:mouseover={applyGradient}>I</span>
+        <span class="letter sm" on:mouseover={applyGradient}>/</span>
+        <span class="letter sm" on:mouseover={applyGradient}>M</span>
+        <span class="letter sm" on:mouseover={applyGradient}>L</span>
+        <span class="letter sm" on:mouseover={applyGradient}>&nbsp</span>
+        <span class="letter sm" on:mouseover={applyGradient}>E</span>
+        <span class="letter sm" on:mouseover={applyGradient}>n</span>
+        <span class="letter sm" on:mouseover={applyGradient}>g</span>
       </div>
     </div>
     <a href="/projects" class="button-cta">View Projects</a>
   </div>
   <div class="sphere"></div>
 </div>
+
+<div class="bg-gradient" style="background-clip: text;"></div>
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
@@ -120,12 +122,14 @@
     font-family: "Mulish", sans-serif;
     color: var(--light-color);
     text-align: left;
-    transition: transform 0.09s ease;
+    transition: transform 0.09s ease, background 0.4s ease;
+    background-clip: text;
   }
 
   .letter:hover {
       transform: scale(1.1) rotate(15deg);
-      animation: sway-back 0.5s ease forwards; 
+      animation: sway-back 0.5s ease forwards;  
+      color: transparent;
   }
 
   .text{
@@ -200,10 +204,10 @@
   }
   
   .text-sphere-container {
-  display: flex;
-  gap: 128px;
-  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 1));
-}
+    display: flex;
+    gap: 128px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 1));
+  }
 
   .sphere {
     display: grid;
@@ -244,4 +248,48 @@
     background-image: var(--linear-rainbow);
     transition: all 0.2s;
   }
+
+  /* Gradient Animation */
+  .bg-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--linear-rainbow);
+    background-size: 400%;
+    z-index: -1;
+    pointer-events: none;
+    animation: move-gradient 5s infinite linear;
+    background-clip: text;
+  }
+
+  @keyframes move-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
 </style>
+
+<script>
+  import { onMount } from "svelte";
+
+  let gradientElement;
+
+  function applyGradient(event) {
+    const gradientStyle = getComputedStyle(gradientElement);
+    const backgroundPosition = gradientStyle.backgroundPosition;
+
+    event.target.style.backgroundImage = gradientStyle.backgroundImage;
+    event.target.style.backgroundPosition = backgroundPosition;
+    event.target.style.backgroundSize = gradientStyle.backgroundSize;
+  }
+
+  onMount(() => {
+    gradientElement = document.querySelector('.bg-gradient');
+  });
+</script>
