@@ -1,3 +1,39 @@
+<script>
+  import { onMount } from "svelte";
+  import Button from "./Button.svelte";
+
+  let gradientElement;
+
+  function applyGradient(event) {
+    const gradientStyle = getComputedStyle(gradientElement);
+    const backgroundPosition = gradientStyle.backgroundPosition;
+
+    event.target.style.backgroundImage = gradientStyle.backgroundImage;
+    event.target.style.backgroundPosition = backgroundPosition;
+    event.target.style.backgroundSize = gradientStyle.backgroundSize;
+  }
+
+  onMount(() => {
+    gradientElement = document.querySelector(".bg-gradient");
+  });
+
+  let colors = ["	#9c7248", "#926a2d", "#876127", "#7c501a", "#6f4f1d"];
+
+  const changeHighlightColor = () => {
+    const color = colors.shift();
+    document.documentElement.style.setProperty("--highlight-color", color);
+    colors.push(color);
+  };
+
+  onMount(() => {
+    window.addEventListener("mousedown", changeHighlightColor);
+
+    return () => {
+      window.removeEventListener("mousedown", changeHighlightColor);
+    };
+  });
+</script>
+
 <div class="text-sphere-container">
   <div class="text-container">
     <div class="text">
@@ -15,7 +51,7 @@
         <span class="letter bg" on:mouseover={applyGradient}>E</span>
         <span class="letter bg" on:mouseover={applyGradient}>R</span>
       </div>
-      <div class="name" >
+      <div class="name">
         <span class="letter md" on:mouseover={applyGradient}>S</span>
         <span class="letter md" on:mouseover={applyGradient}>O</span>
         <span class="letter md" on:mouseover={applyGradient}>F</span>
@@ -58,7 +94,7 @@
         <span class="letter sm" on:mouseover={applyGradient}>g</span>
       </div>
     </div>
-    <a href="/projects" class="button-cta">View Projects</a>
+    <a href="/projects" class="button-cta">VIEW PROJECTS</a>
   </div>
   <div class="sphere"></div>
 </div>
@@ -107,16 +143,16 @@
     text-align: left;
   }
 
-  .bg{
+  .bg {
     font-weight: 1000;
     font-size: 64px;
   }
-  .md{
+  .md {
     font-weight: 700;
     font-size: 24px;
   }
 
-  .sm{
+  .sm {
     font-weight: 700;
     font-size: 16px;
   }
@@ -125,39 +161,40 @@
     font-family: "Mulish", sans-serif;
     color: var(--light-color);
     text-align: left;
-    transition: transform 0.09s ease, background 0.4s ease;
+    transition:
+      transform 0.09s ease,
+      background 0.4s ease;
     background-clip: text;
   }
 
   .letter:hover {
-      transform: scale(1.1) rotate(15deg);
-      animation: sway-back 0.5s ease forwards;  
-      color: transparent;
+    transform: scale(1.1) rotate(15deg);
+    animation: sway-back 0.5s ease forwards;
+    color: transparent;
   }
 
-  .text{
+  .text {
     display: flex;
     flex-direction: column;
     gap: 4px;
   }
 
   @keyframes sway-back {
-      0% {
-          transform: scale(1.9) rotate(0deg) ;
-      }
-      50% {
-          transform: scale(1.0) rotate(15deg);
-      }
-      70% {
-          transform: scale(1.0) rotate(-5deg); 
-      }
-      100% {
-          transform: scale(1.0) rotate(0deg); 
-      }
+    0% {
+      transform: scale(1.9) rotate(0deg);
+    }
+    50% {
+      transform: scale(1) rotate(15deg);
+    }
+    70% {
+      transform: scale(1) rotate(-5deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
   }
 
-
-  .name{
+  .name {
     display: flex;
   }
 
@@ -205,11 +242,12 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
   .text-sphere-container {
     display: flex;
     gap: 128px;
     filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 1));
+    justify-content: center;
   }
 
   .sphere {
@@ -275,40 +313,4 @@
       background-position: 100% 50%;
     }
   }
-
 </style>
-
-<script>
-  import { onMount } from "svelte";
-
-  let gradientElement;
-
-  function applyGradient(event) {
-    const gradientStyle = getComputedStyle(gradientElement);
-    const backgroundPosition = gradientStyle.backgroundPosition;
-
-    event.target.style.backgroundImage = gradientStyle.backgroundImage;
-    event.target.style.backgroundPosition = backgroundPosition;
-    event.target.style.backgroundSize = gradientStyle.backgroundSize;
-  }
-
-  onMount(() => {
-    gradientElement = document.querySelector('.bg-gradient');
-  });
-
-  let colors = ["	#9c7248", "#926a2d", "#876127", "#7c501a", "#6f4f1d" ];
-
-  const changeHighlightColor = () => {
-    const color = colors.shift();
-    document.documentElement.style.setProperty("--highlight-color", color);
-    colors.push(color);
-  };
-
-  onMount(() => {
-    window.addEventListener("mousedown", changeHighlightColor);
-    
-    return () => {
-      window.removeEventListener("mousedown", changeHighlightColor);
-    };
-  });
-</script>

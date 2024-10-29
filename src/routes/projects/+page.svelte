@@ -3,5 +3,7 @@
 </script>
 
 <div>
-    My projects would go here
+    projects will go here 
 </div>
+
+<style></style>
